@@ -16,6 +16,6 @@ foreach ($aluno as $nome => $nota ){
 }
 
 $media = $media / 6 ;
-echo " a media da tuma é $media";
+echo " a media da turma é $media";
 
 ?>
