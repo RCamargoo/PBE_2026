@@ -23,4 +23,8 @@ echo "Valor do desconto: ". ($resultado ["valor_do_desconto"])."<br>";
 echo "Valor do imposto: ". ($resultado ["valor_do_imposto"])."<br>";
 echo "Total: ". ($resultado ["valor_final"])."<br>";
 
+$total_com_frete = calculo_frete($resultado['valor_final']);
+
+echo "Total com frete". $total_com_frete;
+
 ?>

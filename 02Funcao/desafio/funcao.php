@@ -37,6 +37,14 @@ function calcularPedido($nome_p, $preco, $qtd, $percentual_des = 0, $percentual_
 
 }
 
+function calculo_frete($total){
+
+    $frete = $total *( 10/100 );
+    $total_com_frete = $frete + $total;
+
+    return $total_com_frete;
+}
+
 ?>
 
 
