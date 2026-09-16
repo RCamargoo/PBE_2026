@@ -1,9 +1,9 @@
 <?php
 
-$nome = "rafael"
-
-echo "oi"$nome 
 
 
+echo "oi"$nome ;
+
+$nome = "rafael";
 
 ?>
