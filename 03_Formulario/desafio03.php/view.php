@@ -17,9 +17,13 @@
 
             <img width="30%" src="02.png">
 
-            <h1>Compra de Ingressos</h1>
+            <hr>
+
+            <h1>🎟️--Compra de Ingressos--🎟️</h1>
     
             <form action="Logica.php" method="POST">
+
+            <hr>
 
 
             <h3>Filmes:</h3>
@@ -105,8 +109,8 @@
                 <br>
 
             <select name="filme">
-                <option vale="1">Homem-Aranha: Um Novo Dia</option>
-                <option>A Odisseia</option>
+                <option >Homem-Aranha: Um Novo Dia</option>
+                <option >A Odisseia</option>
                 <option>No Limite da Justiça</option>
                 <option>Resident Evil</option>
                 <option>One Piece – O Filme</option>
@@ -119,11 +123,11 @@
             <br>
 
             <h3>Seu Nome:</h3>
-            <input type="text" name="nome" required>
+            <input type="text" name="nome" placeholder="Nome..." minlength="3" maxlength="255" required>
             <br>
 
             <h3>Idade:</h3>
-            <input type="number" name="idade" min="18" required>
+            <input type="number" name="idade" min="18" min="17" max="100"  placeholder="123..." required>
             <br>
 
             <h3>Tipo:</h3>
@@ -134,8 +138,11 @@
             <br>
 
             <h3>Quantidade:</h3>
-            <input type="number" name="quantidade" min="1" required>
+            <input type="number" name="quantidade" min="1" max="200"  placeholder="1 - 200..." required>
             <br><br>
+
+            <input type="checkbox" id="termos" name="termos" required >li e aceito os termos e condições<br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">Aceita receber notificações<br>
 
        
 
