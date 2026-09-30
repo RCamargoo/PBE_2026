@@ -1,34 +1,3 @@
-<?php
-
-require_once "logica.php";
-
-$nome = $_POST["nome"];
-$idade = $_POST["idade"];
-$filme = $_POST["filme"];
-$tipo = $_POST["tipo"];
-$quantidade = $_POST["quantidade"];
-$pagamento = $_POST["pagamento"];
-
-$total = calcularTotal($tipo, $quantidade);
-
-$desconto = calcularDesconto($total, $pagamento);
-
-$totalFinal = $total - $desconto;
-
-$filmes = [
-    "Homem-Aranha: Um Novo Dia",
-    "A Odisseia",
-    "No Limite da Justiça",
-    "Resident Evil",
-    "One Piece – O Filme",
-    "Vingadores: Ultimato Encore",
-    "Minha Melhor Amiga",
-    "Coração Selvagem",
-    "Digger"
-];
-
-?>
-
 <!DOCTYPE html>
 
 <html lang="pt-br">

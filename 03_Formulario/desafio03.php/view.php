@@ -132,8 +132,8 @@
 
             <h3>Tipo:</h3>
             <select name="tipo">
-                <option value="Inteira">Inteira - R$ 30</option>
-                <option value="Meia">Meia - R$ 15</option>
+                <option value="inteira">Inteira - R$ 30</option>
+                <option value="meia">Meia - R$ 15</option>
             </select>
             <br>
 

@@ -1,22 +1,51 @@
 <?php
 
-$precos = [
-    "Inteira" => 30,
-    "Meia" => 15
+$nome = $_POST["nome"];
+$idade = $_POST["idade"];
+$filme = $_POST["filme"];
+$tipo = $_POST["tipo"];
+$quantidade = $_POST["quantidade"];
+$pagamento = $_POST["pagamento"];
+
+$total = calcularTotal($tipo, $quantidade);
+
+$desconto = calcularDesconto($total, $pagamento);
+
+$totalFinal = $total - $desconto;
+
+$filmes = [
+    "Homem-Aranha: Um Novo Dia",
+    "A Odisseia",
+    "No Limite da Justiça",
+    "Resident Evil",
+    "One Piece – O Filme",
+    "Vingadores: Ultimato Encore",
+    "Minha Melhor Amiga",
+    "Coração Selvagem",
+    "Digger"
 ];
+
 
 function calcularTotal($tipo, $quantidade)
 {
-    global $precos; //Permitir que a função $calarTotal acesse e utilize a vatriavel $precos
-
-    return $precos[$tipo] * $quantidade;
+    if($tipo == "meia"){
+        return 15 * $quantidade;
+    }
+    else{
+        return 30 * $quantidade;
+    }
+    
 }
 
-function calcularDesconto($total, $pagamento)
-{
+function calcularDesconto($total, $pagamento){
+
     if ($pagamento == "Pix") {
         return $total * 0.10;
-    } else {
+    }
+    if ($pagamento == "Dinheiro") {
+        return $total * 0.10;
+    } 
+    else {
         return 0;
     }
 }
