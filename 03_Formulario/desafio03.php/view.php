@@ -28,7 +28,7 @@
 
             <h3>Filmes:</h3>
 
-            <table border="1" cellpadding="10" style="margin: auto; text-align: center;">
+            <table border="1"  cellpadding="10"  style="margin: auto; text-align: center;  ">
 
 
                     <tr>
@@ -106,6 +106,10 @@
                     </tr>
 
                 </table>
+
+                <br>
+                <hr>
+
                 <br>
 
             <select name="filme">
