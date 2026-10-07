@@ -8,7 +8,12 @@ class Pedido{
     public $status;
 
     function adicionar_item($valor){
+        if($this->status == "Agardando"){
         $this->valor += $valor;
+        }
+        else{
+            echo " Não podemos adicionar no pedido";
+        }
     }
 
     function cancelar(){
