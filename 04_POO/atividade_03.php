@@ -45,9 +45,28 @@ $aula1->duracao = "2 horas";
 $aula1->numero_sala = 12;
 $aula1->bloco = "A";
 
+Echo "<br>";
 
 $aula1->exibir_informacoes();
-$aula1->trocar_professor("Carlos");
+$aula1->trocar_professor("Luis");
 $aula1->alterar_local(20, "B");
+
+Echo "<br>";
+Echo "<br>";
+Echo "<br>";
+
+$aula1 = new aula();
+
+$aula1->disciplina = "Programação";
+$aula1->professor = "Gabriel";
+$aula1->duracao = "5 horas";
+$aula1->numero_sala = 12;
+$aula1->bloco = "A";
+
+Echo "<br>";
+
+$aula1->exibir_informacoes();
+$aula1->trocar_professor("Leonardo");
+$aula1->alterar_local(12, "B");
 
 ?>
