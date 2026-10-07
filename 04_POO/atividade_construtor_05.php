@@ -26,6 +26,7 @@ class livro{
 
 $livro = new livro("programação", "Leonardo", 200, 2026);
 $livro->exibir_detalhes();
+
 $livro = new livro("banco de Dados", "Rafael", 300, 2026);
 $livro->exibir_detalhes();
 
