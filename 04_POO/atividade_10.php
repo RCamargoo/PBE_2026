@@ -6,11 +6,11 @@ class Carro{
     private $consumo;
     private $tanque;
 
-    public function __construct($modelo, $consumo = 10, $tanqueInicial = 0){
+    public function __construct($modelo, $consumo = 10, $tanque_inicial = 0){
 
         $this->modelo = $modelo;
         $this->consumo = $consumo;
-        $this->tanque = $tanqueInicial;
+        $this->tanque = $tanque_inicial;
     }
 
     public function abastecer($litros){
@@ -40,7 +40,8 @@ class Carro{
         if($necessario <= $this->tanque){
             $this->tanque -= $necessario;
             echo "O carro percorreu $km km <br> ";
-        }else{
+        }
+        else{
             echo "Combustível insuficiente para percorrer $km <br> ";
         }
     }

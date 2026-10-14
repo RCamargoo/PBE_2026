@@ -1,3 +1,4 @@
+```php
 <?php
 
 class Pedido{
@@ -8,11 +9,11 @@ class Pedido{
     public $status;
 
     function adicionar_item($valor){
-        if($this->status == "Agardando"){
-        $this->valor += $valor;
+        if($this->status == "Aguardando"){
+            $this->valor += $valor;
         }
         else{
-            echo " Não podemos adicionar no pedido";
+            echo "Não podemos adicionar no pedido<br>";
         }
     }
 
@@ -44,7 +45,6 @@ $pedido1->adicionar_item(50);
 $pedido1->adicionar_item(30);
 $pedido1->finalizar();
 
-
 $pedido2 = new Pedido();
 
 $pedido2->numero = 7;
@@ -60,3 +60,4 @@ $pedido1->exibir_resumo();
 $pedido2->exibir_resumo();
 
 ?>
+```

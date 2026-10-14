@@ -19,7 +19,7 @@ class Funcionario {
             $this->salario += $aumento;
 
         } else {
-            echo "Erro: O percentual de aumento deve ser maior que 0% e menor ou igual a 10%.<br>";
+            echo "Erro: O percentual de aumento deve ser > que 0% e <= a 10% <br>";
 
         }
 
@@ -28,8 +28,8 @@ class Funcionario {
     public function exibir_salario() {
 
         $salario_formatado = $this->salario;
-        echo "Funcionário: $this->nome<br>";
-        echo "Salário: $salario_formatado<br>";
+        echo "Funcionário: $this->nome <br>";
+        echo "Salário: $salario_formatado <br>";
 
     }
 

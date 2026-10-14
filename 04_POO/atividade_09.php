@@ -19,10 +19,10 @@ class Produto {
         if($quantidade <= $this->estoque) {
 
             $this->estoque = $this->estoque - $quantidade;
-            echo "Venda realizada com sucesso!<br> ";
+            echo "Venda realizada com sucesso! <br><br> ";
 
         } else {
-            echo "Estoque insuficiente!<br> ";
+            echo "Estoque insuficiente! <br><br> ";
 
         }
 
@@ -32,15 +32,15 @@ class Produto {
 
         $aumento = $this->preco * ($percentual / 100);
         $this->preco = $this->preco + $aumento;
-        echo "Preço reajustado com sucesso!<br> ";
+        echo "Preço reajustado com sucesso! <br><br> ";
  
     }
 
     public function exibir_info() {
 
-        echo "Produto: $this->nome<br> ";
-        echo "Preço: $this->preco ";
-        echo "Estoque: $this->estoque unidades<br> ";
+        echo "Produto: $this->nome <br> ";
+        echo "Preço: $this->preco <br>";
+        echo "Estoque: $this->estoque unidades <br> ";
 
     }
 
