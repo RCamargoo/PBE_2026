@@ -1,3 +1,4 @@
+
 <?php
 
 class Paciente{
@@ -7,27 +8,48 @@ class Paciente{
     private $peso;
     private $altura;
 
-
     public function __construct($idade, $peso, $altura, $nome){
 
         $this->idade = $idade;
         $this->peso = $peso;
         $this->altura = $altura;
         $this->nome = $nome;
-
     }
 
-    public function IMC(){
+    public function calcular_imc(){
 
-        $IMC =  $this->peso / ($this->altura * $this->altura);
+        $imc = $this->peso / ($this->altura * $this->altura);
+        return $imc;
     }
 
-    public function clacificar(){
+    public function classificar($imc){
 
-        if ($IMC <= 18){
-
+        if ($imc < 18.5){
+            return "Baixo peso";
+        }
+        elseif ($imc < 25){
+            return "Normal";
+        }
+        else{
+            return "Sobrepeso";
         }
     }
 }
+
+$paciente1 = new Paciente(10, 100, 1.60, "João");
+$paciente2 = new Paciente(30, 90, 2.00, "Felipe");
+
+$imc1 = $paciente1->calcular_imc();
+$imc2 = $paciente2->calcular_imc();
+
+echo "Paciente: João <br>";
+echo "IMC: $imc1 <br>";
+echo $paciente1->classificar($imc1);
+
+echo "<br><br>";
+
+echo "Paciente: Felipe<br>";
+echo "IMC: $imc2 <br>";
+echo  $paciente2->classificar($imc2);
 
 ?>
