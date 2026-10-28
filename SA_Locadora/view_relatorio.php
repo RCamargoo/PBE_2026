@@ -14,7 +14,7 @@
 
     <h1>Resultado </h1>
 
-    <p><b>Valor</b> <?php $valor_total ?><p>
+    <p><b>Valor</b> <?= $valor_total ?><p>
         
     </body>
 

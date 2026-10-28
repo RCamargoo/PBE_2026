@@ -31,11 +31,11 @@
     function calcularPercentual($qtd, $valor_total){
 
 
-        if ($qtd >= 15 ){
-           return $valor_total = $valor_total - ($valor_total * 0,2);
+        if ($qtd >= 15){
+           return $valor_total = $valor_total - ($valor_total * 0.2);
         }
         elseif($qtd >=7){
-           return $valor_total = $valor_total - ($valor_total * 0,1);
+           return $valor_total = $valor_total - ($valor_total * 0.1);
         }
         else{
            return $valor_total = $valor_total;
@@ -58,6 +58,8 @@
         }
 
     $valor_total = calcularSubtotal($ctg, $qtd);
+
+    echo $valor_total;
 
     require_once "view_relatorio.php";
 
