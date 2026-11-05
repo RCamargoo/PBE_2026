@@ -43,8 +43,6 @@
     }
         
 
-
-
     if($seguro_total == "sim"){
         $valor_total = $valor_total + (40 * $qtd);
         }
@@ -58,8 +56,6 @@
         }
 
     $valor_total = calcularSubtotal($ctg, $qtd);
-
-    echo $valor_total;
 
     require_once "view_relatorio.php";
 
