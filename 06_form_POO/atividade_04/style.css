@@ -1,0 +1,217 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 45px 20px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* CABEÇALHO */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #e50914;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 8px 0 35px;
+}
+
+/* CARDS */
+.card {
+    background: #15151d;
+    border: 1px solid #292933;
+    border-radius: 15px;
+    padding: 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #e50914;
+    transform: translateY(-2px);
+}
+
+/* TÍTULOS */
+h2 {
+    color: #ff303b;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #33333d;
+}
+
+/* DADOS DO ALUNO */
+.dados p,
+.resumo p {
+    background: #20202a;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #d5d5dd;
+}
+
+strong {
+    color: #ffffff;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #33333d;
+}
+
+th {
+    background: #25252f;
+    color: #ff303b;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #d5d5dd;
+    font-size: 14px;
+}
+
+td:last-child,
+th:last-child {
+    text-align: right;
+}
+
+tr:hover td {
+    background: #20202a;
+}
+
+/* TOTAL MENSALIDADE */
+.total-mensalidade th {
+    background: #3a151a;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* RESUMO */
+.resumo {
+    margin-bottom: 20px;
+}
+
+/* TOTAL DO CONTRATO */
+.total-contrato {
+    background: linear-gradient(135deg, #e50914, #a90009);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.total-contrato span {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.total-contrato h3 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+/* MENSAGENS */
+.mensagem {
+    background: #25252f;
+    border-left: 4px solid #e50914;
+    padding: 15px;
+    border-radius: 7px;
+    color: #dddddd;
+    font-size: 14px;
+}
+
+.mensagem.sucesso {
+    border-left-color: #20c878;
+}
+
+/* BOTÃO */
+.botao {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 16px 28px;
+    background: linear-gradient(135deg, #e50914, #a90009);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(229, 9, 20, 0.35);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        padding: 20px 15px;
+    }
+
+    th, td {
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+
+    .total-contrato h3 {
+        font-size: 25px;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+}
