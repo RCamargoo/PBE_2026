@@ -2,12 +2,14 @@
 
 class Matricula {
 
-    private $aluno;
+    //Isso serve para a informação vir da classe
+    private Aluno $aluno;
     private $plano;
     private $meses;
     private $modalidades;
 
     public function __construct($aluno, $plano, $meses, $modalidades) {
+
         $this->aluno = $aluno;
         $this->plano = $plano;
         $this->meses = $meses;
@@ -36,7 +38,7 @@ class Matricula {
             return 80;
         } elseif ($this->plano == "Plus") {
             return 120;
-        } elseif ($this->plano == "Premium") {
+        } else {
             return 180;
         }
 
@@ -48,7 +50,7 @@ class Matricula {
             return 60;
         } elseif ($modalidade == "Funcional") {
             return 40;
-        } elseif ($modalidade == "Lutas") {
+        } else{
             return 50;
         }
 

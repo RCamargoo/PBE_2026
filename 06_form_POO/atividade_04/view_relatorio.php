@@ -65,33 +65,26 @@
 
         </table>
 
+        <br>
+
         <h2>Resumo do Contrato</h2>
 
         <p>Meses: <?= $matricula->getMeses() ?></p>
 
-        <p>
-            Subtotal:
-            R$ <?= number_format($matricula->calcularSubtotal(), 2, ',', '.') ?>
-        </p>
+        <p>Subtotal: R$ <?= number_format($matricula->calcularSubtotal(), 2, ',', '.') ?></p>
 
-        <p>
-            Desconto (<?= $matricula->calcularPercentualDesconto() ?>%):
-            R$ <?= number_format($matricula->calcularDesconto(), 2, ',', '.') ?>
-        </p>
+        <p>Desconto (<?= $matricula->calcularPercentualDesconto() ?>%):R$ <?= number_format($matricula->calcularDesconto(), 2, ',', '.') ?></p>
 
-        <h2>
-            Total do contrato:
-            R$ <?= number_format($matricula->calcularTotal(), 2, ',', '.') ?>
-        </h2>
+        <h2>Total do contrato: R$ <?= number_format($matricula->calcularTotal(), 2, ',', '.') ?></h2>
 
         <?php if ($matricula->calcularPercentualDesconto() > 0): ?>
 
-            <p> Parabéns! Você ganhou
-                <?= $matricula->calcularPercentualDesconto() ?>% de desconto.
-            </p>
+        <p> Parabéns! Você ganhou <?= $matricula->calcularPercentualDesconto() ?>% de desconto.</p>
 
         <?php else: ?>
+
             <p>Dica: fechando 6 meses ou mais você ganha desconto.</p>
+
         <?php endif ?>
         <br>
 

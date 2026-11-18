@@ -1,0 +1,242 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 45px 20px;
+}
+
+/* CONTAINER */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #15151d;
+    border: 1px solid #292933;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* TÍTULOS SECUNDÁRIOS */
+h2 {
+    color: #2196f3;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 25px 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #33333d;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+/* LABELS */
+label {
+    display: inline-block;
+    color: #d5d5dd;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* CAMPOS */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 13px;
+    background: #20202a;
+    border: 1px solid #383844;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* EFEITO DOS CAMPOS */
+input:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* SELECT */
+select {
+    cursor: pointer;
+}
+
+select option {
+    background: #20202a;
+    color: white;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #007bff;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* MODALIDADES */
+form > br {
+    line-height: 2;
+}
+
+/* BOTÃO */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    background: linear-gradient(135deg, #007bff, #003f91);
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFEITO DO BOTÃO */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.35);
+    background: linear-gradient(135deg, #2196f3, #0056b3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    form {
+        padding: 22px 17px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+/* =================================
+   TABELA POWERFIT
+================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    background: #15151d;
+    border: 1px solid #292933;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* CABEÇALHO */
+th {
+    background: linear-gradient(135deg, #007bff, #003f91);
+    color: #ffffff;
+    padding: 17px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+/* CÉLULAS */
+td {
+    padding: 16px;
+    color: #d5d5dd;
+    font-size: 14px;
+    border-bottom: 1px solid #30303c;
+    transition: 0.2s;
+}
+
+/* ALTERNÂNCIA DAS LINHAS */
+tr:nth-child(even) td {
+    background: #1c1c27;
+}
+
+tr:nth-child(odd) td {
+    background: #15151d;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+tr:hover td {
+    background: #202f43;
+    color: #ffffff;
+}
+
+/* ÚLTIMA COLUNA */
+td:last-child,
+th:last-child {
+    text-align: right;
+}
+
+/* ÚLTIMA LINHA - TOTAL */
+tr:last-child th {
+    background: #003f91;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 18px;
+    border-top: 2px solid #2196f3;
+}
+
+/* REMOVE BORDA DA ÚLTIMA LINHA */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 12px 9px;
+        font-size: 12px;
+    }
+}
